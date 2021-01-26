@@ -1,0 +1,1672 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook source-build='2019.4.2 (20194.20.0119.2058)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='HeartDiseaseMortality_Tableau' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='mortality_heartdisease_data' inline='true' name='federated.0n7lo1u179z8b51g3h85p0hey5io' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mortality_heartdisease_data' name='textscan.1q7uayx1mtured1cw6xnn14wjafp'>
+            <connection class='textscan' directory='C:/Users/sgarcia/Downloads' filename='mortality_heartdisease_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1q7uayx1mtured1cw6xnn14wjafp' name='mortality_heartdisease_data.csv' table='[mortality_heartdisease_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='integer' name='location_id' ordinal='1' />
+            <column datatype='integer' name='yr' ordinal='2' />
+            <column datatype='string' name='location_desc' ordinal='3' />
+            <column datatype='string' name='location_abbr' ordinal='4' />
+            <column datatype='string' name='topic' ordinal='5' />
+            <column datatype='string' name='indicators' ordinal='6' />
+            <column datatype='string' name='break_out_category' ordinal='7' />
+            <column datatype='string' name='break_out' ordinal='8' />
+            <column datatype='real' name='data_value' ordinal='9' />
+            <column datatype='real' name='confidence_limit_low' ordinal='10' />
+            <column datatype='real' name='confidence_limit_high' ordinal='11' />
+            <column datatype='string' name='topic_id' ordinal='12' />
+            <column datatype='string' name='indicator_id' ordinal='13' />
+            <column datatype='string' name='break_out_category_id' ordinal='14' />
+            <column datatype='string' name='break_out_id' ordinal='15' />
+            <column datatype='real' name='y_lat' ordinal='16' />
+            <column datatype='real' name='x_lon' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[location_id]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>location_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>yr</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_desc]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>location_desc</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location_abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location_abbr]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>location_abbr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>topic</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[topic]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>topic</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>indicators</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[indicators]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>indicators</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>break_out_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[break_out_category]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>break_out_category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>break_out</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[break_out]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>break_out</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_value]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>data_value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confidence_limit_low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[confidence_limit_low]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>confidence_limit_low</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confidence_limit_high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[confidence_limit_high]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>confidence_limit_high</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>topic_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[topic_id]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>topic_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>indicator_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[indicator_id]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>indicator_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>break_out_category_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[break_out_category_id]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>break_out_category_id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>break_out_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[break_out_id]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>break_out_id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y_lat]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>y_lat</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x_lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x_lon]</local-name>
+            <parent-name>[mortality_heartdisease_data.csv]</parent-name>
+            <remote-alias>x_lon</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Break Out' datatype='string' name='[break_out]' role='dimension' type='nominal' />
+      <column caption='Break Out Category' datatype='string' name='[break_out_category]' role='dimension' type='nominal' />
+      <column caption='Break Out Category Id' datatype='string' name='[break_out_category_id]' role='dimension' type='nominal' />
+      <column caption='Break Out Id' datatype='string' name='[break_out_id]' role='dimension' type='nominal' />
+      <column caption='Confidence Limit High' datatype='real' name='[confidence_limit_high]' role='measure' type='quantitative' />
+      <column caption='Confidence Limit Low' datatype='real' name='[confidence_limit_low]' role='measure' type='quantitative' />
+      <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Indicator Id' datatype='string' name='[indicator_id]' role='dimension' type='nominal' />
+      <column caption='Indicators' datatype='string' name='[indicators]' role='dimension' type='nominal' />
+      <column caption='Location Abbr' datatype='string' name='[location_abbr]' role='dimension' type='nominal' />
+      <column caption='Location Desc' datatype='string' name='[location_desc]' role='dimension' type='nominal' />
+      <column caption='Location Id' datatype='integer' name='[location_id]' role='dimension' type='ordinal' />
+      <column caption='Topic' datatype='string' name='[topic]' role='dimension' type='nominal' />
+      <column caption='Topic Id' datatype='string' name='[topic_id]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='X Lon' datatype='real' name='[x_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Y Lat' datatype='real' name='[y_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+      <column-instance column='[break_out]' derivation='None' name='[none:break_out:nk]' pivot='key' type='nominal' />
+      <group caption='Set 2' name='[Set 1 (copy)]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='AVG([data_value])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[location_abbr]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Set 1' name='[Set 1]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='AVG([data_value])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[location_abbr]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Data Imports/mortality_heartdisease_data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/26/2021 02:58:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='mortality_heartdisease_data' increment-value='%null%' refresh-type='create' rows-inserted='86190' timestamp-start='2021-01-26 02:58:18.423' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86190</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[location_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>yr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[yr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>yr</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location_desc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location_desc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location_desc</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location_abbr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location_abbr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location_abbr</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>topic</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[topic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>topic</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>indicators</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[indicators]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>indicators</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>break_out_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[break_out_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>break_out_category</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>break_out</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[break_out]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>break_out</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>data_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[data_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>data_value</remote-alias>
+              <ordinal>9</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9325</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>confidence_limit_low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[confidence_limit_low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>confidence_limit_low</remote-alias>
+              <ordinal>10</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9001</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>confidence_limit_high</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[confidence_limit_high]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>confidence_limit_high</remote-alias>
+              <ordinal>11</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9964</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>topic_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[topic_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>topic_id</remote-alias>
+              <ordinal>12</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>indicator_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[indicator_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>indicator_id</remote-alias>
+              <ordinal>13</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>break_out_category_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[break_out_category_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>break_out_category_id</remote-alias>
+              <ordinal>14</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>break_out_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[break_out_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>break_out_id</remote-alias>
+              <ordinal>15</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y_lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y_lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>y_lat</remote-alias>
+              <ordinal>16</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x_lon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x_lon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x_lon</remote-alias>
+              <ordinal>17</ordinal>
+              <family>mortality_heartdisease_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.439462' group-percentage='0.239163' measure-ordering='alphabetic' measure-percentage='0.321375' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:break_out:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;35+&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;25-44&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Hispanic&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;65+&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Non-Hispanic Black&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;18-24&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Non-Hispanic White&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;45-64&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;75+&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[indicator_id]' filter-group='2'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[indicator_id]' member='&quot;NV001&quot;' />
+          <groupfilter function='member' level='[indicator_id]' member='&quot;NV002&quot;' />
+          <groupfilter function='member' level='[indicator_id]' member='&quot;NV003&quot;' />
+        </groupfilter>
+      </filter>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='10 US States with Historically Higher Avg. Heart Disease Mortality Rates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>10 US States with Historically Higher Avg. Heart Disease Mortality Rates</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
+            <column caption='Location Abbr' datatype='string' name='[location_abbr]' role='dimension' type='nominal' />
+            <column-instance column='[location_abbr]' derivation='None' name='[none:location_abbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[x_lon]' derivation='None' name='[none:x_lon:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y_lat]' derivation='None' name='[none:y_lat:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='X Lon' datatype='real' name='[x_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Y Lat' datatype='real' name='[y_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[io:Set 1:nk]'>
+            <groupfilter function='member' level='[io:Set 1:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[io:Set 1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:x_lon:qk]' field-type='quantitative' max='-7749054.5612640344' min='-11487371.617717452' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:y_lat:qk]' field-type='quantitative' max='6903718.7949167108' min='2977860.8280025283' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:location_abbr:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:y_lat:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:x_lon:qk]</cols>
+      </table>
+      <simple-id uuid='{FF967240-9FD5-42FE-B1A2-3AF4041BEE30}' />
+    </worksheet>
+    <worksheet name='10 US States with Historically Lower Avg. Heart Disease Mortality Rates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>10 US States with Historically Lower Avg. Heart Disease Mortality Rates</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column caption='Location Abbr' datatype='string' name='[location_abbr]' role='dimension' type='nominal' />
+            <column-instance column='[location_abbr]' derivation='None' name='[none:location_abbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[x_lon]' derivation='None' name='[none:x_lon:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y_lat]' derivation='None' name='[none:y_lat:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='X Lon' datatype='real' name='[x_lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Y Lat' datatype='real' name='[y_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[Set 1 (copy)]' />
+          <slices>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[Set 1 (copy)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:x_lon:qk]' field-type='quantitative' max='-6918049.9817454368' min='-15022177.51134989' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:y_lat:qk]' field-type='quantitative' max='7703988.5114354845' min='1440459.6554862945' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:location_abbr:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:y_lat:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:x_lon:qk]</cols>
+      </table>
+      <simple-id uuid='{73ABC587-8DEC-4A71-A188-55D7059E0C2C}' />
+    </worksheet>
+    <worksheet name='Breakout of Average Heart Disease Mortality Rate by Gender in US (Yrs 2010-2013)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Breakout of Average Heart Disease Mortality Rate by Gender in US (Yrs 2010-2013)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Break Out' datatype='string' name='[break_out]' role='dimension' type='nominal' />
+            <column caption='Break Out Category' datatype='string' name='[break_out_category]' role='dimension' type='nominal' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column-instance column='[break_out]' derivation='None' name='[none:break_out:nk]' pivot='key' type='nominal' />
+            <column-instance column='[break_out_category]' derivation='None' name='[none:break_out_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[yr]' derivation='None' name='[none:yr:ok]' pivot='key' type='ordinal' />
+            <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out_category:nk]'>
+            <groupfilter function='member' level='[none:break_out_category:nk]' member='&quot;Gender&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:yr:ok]' member='2010' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2011' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2012' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2013' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out_category:nk]</column>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]' value='105' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]</cols>
+      </table>
+      <simple-id uuid='{84834629-873F-4D1D-B106-A3FF447E40D5}' />
+    </worksheet>
+    <worksheet name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Breakout of Average Heart Disease Mortality Rate by Age Bins in US (Yrs 2010-2013)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Break Out' datatype='string' name='[break_out]' role='dimension' type='nominal' />
+            <column caption='Break Out Category' datatype='string' name='[break_out_category]' role='dimension' type='nominal' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column-instance column='[break_out]' derivation='None' name='[none:break_out:nk]' pivot='key' type='nominal' />
+            <column-instance column='[break_out_category]' derivation='None' name='[none:break_out_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[yr]' derivation='None' name='[none:yr:ok]' pivot='key' type='ordinal' />
+            <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out_category:nk]'>
+            <groupfilter function='member' level='[none:break_out_category:nk]' member='&quot;Age&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:yr:ok]' member='2010' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2011' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2012' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2013' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out_category:nk]</column>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]</cols>
+      </table>
+      <simple-id uuid='{4507F973-81D0-4FB9-8832-319FF0D6DE28}' />
+    </worksheet>
+    <worksheet name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013) (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Breakout of Average Heart Disease Mortality Rate by Race in US (Yrs 2010-2013)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Break Out' datatype='string' name='[break_out]' role='dimension' type='nominal' />
+            <column caption='Break Out Category' datatype='string' name='[break_out_category]' role='dimension' type='nominal' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column-instance column='[break_out]' derivation='None' name='[none:break_out:nk]' pivot='key' type='nominal' />
+            <column-instance column='[break_out_category]' derivation='None' name='[none:break_out_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[yr]' derivation='None' name='[none:yr:ok]' pivot='key' type='ordinal' />
+            <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out_category:nk]'>
+            <groupfilter function='member' level='[none:break_out_category:nk]' member='&quot;Race&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:yr:ok]' member='2010' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2011' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2012' />
+              <groupfilter function='member' level='[none:yr:ok]' member='2013' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out_category:nk]</column>
+            <column>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]</cols>
+      </table>
+      <simple-id uuid='{C2113DAA-2BF3-494E-876F-4032183C4273}' />
+    </worksheet>
+    <worksheet name='Historical Average Rate of Heart Disease Mortality for 3 US Indicators (Yrs. 2001-2013)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Historical Average Rate of Heart Disease Mortality for 3 US Indicators (Yrs. 2001-2013)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column caption='Indicators' datatype='string' name='[indicators]' role='dimension' type='nominal' />
+            <column-instance column='[indicators]' derivation='None' name='[none:indicators:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:indicators:nk]' value='233' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+              <lod column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:indicators:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:indicators:nk]</cols>
+      </table>
+      <simple-id uuid='{C30B740B-E4BC-4050-93B1-65F67EC46A57}' />
+    </worksheet>
+    <worksheet name='Time Series of Average Heart Disease Mortality Rate in US (Yrs. 2001-2013)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Time Series of Average Heart Disease Mortality Rate in US (Yrs. 2001-2013)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mortality_heartdisease_data' name='federated.0n7lo1u179z8b51g3h85p0hey5io' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7lo1u179z8b51g3h85p0hey5io'>
+            <column-instance column='[data_value]' derivation='Avg' name='[avg:data_value:qk]' pivot='key' type='quantitative' />
+            <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+            <column-instance column='[yr]' derivation='None' name='[none:yr:qk]' pivot='key' type='quantitative' />
+            <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:qk]' scope='cols' value='Year' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+              <text column='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]</rows>
+        <cols>[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:yr:qk]</cols>
+      </table>
+      <simple-id uuid='{884CA71F-A5A1-49AE-B9EB-1C7F9EE9C7CC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Biodemo Data Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97790' id='17' param='vert' type='layout-flow' w='98698' x='651' y='1105'>
+            <zone h='5801' id='18' type='title' w='98698' x='651' y='1105'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91989' id='11' param='horz' type='layout-flow' w='98698' x='651' y='6906'>
+              <zone h='91989' id='8' param='horz' type='layout-flow' w='98698' x='651' y='6906'>
+                <zone h='91989' id='6' type='layout-basic' w='98698' x='651' y='6906'>
+                  <zone h='91989' id='3' name='Breakout of Average Heart Disease Mortality Rate by Gender in US (Yrs 2010-2013)' w='25468' x='651' y='6906'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='91989' id='5' name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013)' w='39463' x='26119' y='6906'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='91989' id='9' name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013) (2)' w='33767' x='65582' y='6906'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97790' id='23' param='vert' type='layout-flow' w='98698' x='651' y='1105'>
+                <zone h='5801' id='18' type='title' w='98698' x='651' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='3' is-fixed='true' name='Breakout of Average Heart Disease Mortality Rate by Gender in US (Yrs 2010-2013)' w='25468' x='651' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='5' is-fixed='true' name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013)' w='39463' x='26119' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='9' is-fixed='true' name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013) (2)' w='33767' x='65582' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7E9FB0C0-2832-4F20-B078-168DC00E8E0A}' />
+    </dashboard>
+    <dashboard name='Geographic Historical Data Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97790' id='16' param='vert' type='layout-flow' w='98698' x='651' y='1105'>
+            <zone h='5801' id='17' type='title' w='98698' x='651' y='1105'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91989' id='7' param='horz' type='layout-flow' w='98698' x='651' y='6906'>
+              <zone h='91989' id='5' type='layout-basic' w='98698' x='651' y='6906'>
+                <zone h='91989' id='3' name='10 US States with Historically Higher Avg. Heart Disease Mortality Rates' w='49349' x='651' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='91989' id='10' name='10 US States with Historically Lower Avg. Heart Disease Mortality Rates' w='49349' x='50000' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97790' id='22' param='vert' type='layout-flow' w='98698' x='651' y='1105'>
+                <zone h='5801' id='17' type='title' w='98698' x='651' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='3' is-fixed='true' name='10 US States with Historically Higher Avg. Heart Disease Mortality Rates' w='49349' x='651' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='10' is-fixed='true' name='10 US States with Historically Lower Avg. Heart Disease Mortality Rates' w='49349' x='50000' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8CE70E0-1368-4F60-9CCB-5C58C6FF4089}' />
+    </dashboard>
+    <dashboard name='Historical Data Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98020' id='14' param='vert' type='layout-flow' w='98698' x='651' y='990'>
+            <zone h='5198' id='15' type='title' w='98698' x='651' y='990'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92822' id='8' param='horz' type='layout-flow' w='98698' x='651' y='6188'>
+              <zone h='92822' id='6' type='layout-basic' w='98698' x='651' y='6188'>
+                <zone h='92822' id='3' name='Historical Average Rate of Heart Disease Mortality for 3 US Indicators (Yrs. 2001-2013)' w='49347' x='651' y='6188'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='92822' id='5' name='Time Series of Average Heart Disease Mortality Rate in US (Yrs. 2001-2013)' w='49351' x='49998' y='6188'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97790' id='20' param='vert' type='layout-flow' w='98698' x='651' y='1105'>
+                <zone h='5801' id='15' type='title' w='98698' x='651' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='3' is-fixed='true' name='Historical Average Rate of Heart Disease Mortality for 3 US Indicators (Yrs. 2001-2013)' w='49348' x='651' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91989' id='5' is-fixed='true' name='Time Series of Average Heart Disease Mortality Rate in US (Yrs. 2001-2013)' w='49350' x='49999' y='6906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D75205DE-7836-44DB-A01D-E8A5C2ABFF39}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Historical Average Rate of Heart Disease Mortality for 3 US Indicators (Yrs. 2001-2013)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A387C271-0DD7-4F10-A21D-91F05BD51F3E}' />
+    </window>
+    <window class='worksheet' name='10 US States with Historically Higher Avg. Heart Disease Mortality Rates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[io:Set 1:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{14766F58-484E-4DC3-B6D9-2A10EE41B15B}' />
+    </window>
+    <window class='worksheet' name='10 US States with Historically Lower Avg. Heart Disease Mortality Rates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[Set 1 (copy)]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{2000A83C-7B8E-45E9-9591-18A739433C48}' />
+    </window>
+    <window class='worksheet' name='Breakout of Average Heart Disease Mortality Rate by Gender in US (Yrs 2010-2013)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78F1A85B-827F-4FA3-A974-2EF42F1A0FCF}' />
+    </window>
+    <window class='worksheet' name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4724385F-DDD6-4932-B8FC-C554BC52CF3C}' />
+    </window>
+    <window class='worksheet' name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013) (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[none:break_out:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB773A5E-CEA8-480F-A292-EA8D7465A1AA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Time Series of Average Heart Disease Mortality Rate in US (Yrs. 2001-2013)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n7lo1u179z8b51g3h85p0hey5io].[avg:data_value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AF488D2D-E882-41C2-B29C-16C1252FB328}' />
+    </window>
+    <window class='dashboard' name='Historical Data Dashboard'>
+      <viewpoints>
+        <viewpoint name='Historical Average Rate of Heart Disease Mortality for 3 US Indicators (Yrs. 2001-2013)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Time Series of Average Heart Disease Mortality Rate in US (Yrs. 2001-2013)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{A56EE651-9743-49A4-8D5F-B8CEFAD270B1}' />
+    </window>
+    <window class='dashboard' name='Geographic Historical Data Dashboard'>
+      <viewpoints>
+        <viewpoint name='10 US States with Historically Higher Avg. Heart Disease Mortality Rates'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='10 US States with Historically Lower Avg. Heart Disease Mortality Rates'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='17' />
+      <simple-id uuid='{E9667B65-2C72-442B-B98F-018C08A7D35D}' />
+    </window>
+    <window class='dashboard' name='Biodemo Data Dashboard'>
+      <viewpoints>
+        <viewpoint name='Breakout of Average Heart Disease Mortality Rate by Gender in US (Yrs 2010-2013)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Breakout of Average Heart Disease Mortality Rates by Age Bin in US (Yrs 2010-2013) (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{30FED542-8C92-44A8-A28D-D6C225B6EC02}' />
+    </window>
+  </windows>
+</workbook>
