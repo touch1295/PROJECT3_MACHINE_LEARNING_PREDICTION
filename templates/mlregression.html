@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Heart Disease ML Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-close" onclick="closeMenu()"></i>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="tableau.html"><li>Data Visualizations</li></a>
+                <a href="mlregression.html"><li>Heart Disease Prediction</li></a>
+            </ul>
+            <button type="button" class="btn btn-light"><a href="https://github.com/touch1295/PROJECT3_MACHINE_LEARNING_PREDICTION">Access Project Repository</a></button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+    <div class="banner-title3">
+        <h1>Heart Disease<span> Classification </span>Prediction</h1>
+        <div id="paper">
+            <div id="pattern">
+              <div id="content">
+                <p>For the machine learning piece, we used a sample Heart Disease dataset from Cleveland, OH. The dataset has 14 factors in total with some being age, sex, maximum heart rate achieved, serum cholesterol, etc. We have built a regression and concluded with a classification prediction. We are predicting if a person with these factors will have heart disease, so our Y was a binary classification “Target” of (0- No Heart Disease or 1- Heart Disease).</p>
+                <p>We created 4 different models: K Neighbors Classifier, Neural Network, Random Forest and Support Vector Machine. The Random Forest model was best-fit for our training and test data split. Compared to the other models, this was our best-fit because it had a higher Training Data Score: 1.0 and Testing Data Score: 0.6447. In addition, the F1-score was 0.82. The top 4 relevant factors of classifying a person with heart disease are age, maximum heart rate achieved, serum cholesterol, and ST depression induced by exercise relative to rest.</p>
+              </div>
+            </div>
+        </div>
+        <img src="images/df.png">
+        <img src="images/training.png">
+        <img src="images/rmodel.png">
+    </div>
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right = "0";
+        }
+        function closeMenu(){
+            show.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: 1000px 1000px;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 100px;
+}
+.nav-logo img{
+    width: 70px;
+    float:left;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #df0f0f;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.btn btn-light{
+    padding: 8px 8px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links .btn{
+    float: right;
+}
+.banner-title{
+    margin: 0px 140px;
+    color:#fff;   
+}
+.banner-title h1{
+    font-size: 45px;
+}
+.banner-title h1 span{
+    color:#df0f0f;
+}
+.banner-title p{
+    font-size: 22px;
+    color:white;
+}
+.banner-title a{
+    color:#df0f0f;
+}
+.banner-title2{
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    color:#fff;   
+}
+.banner-title2 h1{
+    font-size: 45px;
+}
+.banner-title2 h1 span{
+    color:#df0f0f;
+}
+.banner-title3{
+    margin: 0px 190px;
+    color:#fff;    
+}
+.banner-title3 h1{
+    font-size: 45px;
+}
+.banner-title3 h1 span{
+    color:#df0f0f;
+}
+.banner-title3 img{
+    width: 900px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.nav-bar .fa{
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* styling paper */
+#paper {
+  width: 750px;
+  height: 550px;
+  position: relative;
+  margin: 25px 50px 25px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling red vertical line */
+#paper::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255,0,0,0.6);
+}
+
+/* styling blue horizontal lines */
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+#content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  color:#000;
+  font-family: 'Dancing Script', cursive;
+  font-size: 21px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+						
+@media (max-width:700px){
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title h1{
+        font-size: 50px;
+    }
+    .banner-title2{
+        margin: 80px 40px;
+    }
+    .banner-title2 h1{
+        font-size: 50px;
+    }
+    .banner-title3{
+        margin: 80px 40px;
+    }
+    .banner-title3 h1{
+        font-size: 50px;
+    }
+    .notifications{
+        width: 100%;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top:10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul a{
+        display: block;    
+    }
+    .nav-links .btn{
+        float: none;
+        margin-left 25px;
+        margin-top: 10px;
+    }
+}
